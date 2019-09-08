@@ -27,3 +27,4 @@ const isAuth = (WrappedComponent) => {
 };
 
 export default isAuth;
+
