@@ -5,7 +5,7 @@ class HomePage extends Component {
         return (
             <div className="container">
                 <div className="col-md-12">
-                    <h4>HOME</h4>
+                    <h4>WELCOME</h4>
                 </div>
             </div>
         );
