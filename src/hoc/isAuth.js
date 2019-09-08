@@ -10,7 +10,7 @@ const isAuth = (WrappedComponent) => {
 
             if (!isAuthorized) {
                 return <Redirect to='/login' />;
-            } 
+            }
 
             return <WrappedComponent {...this.props}/>;
         }
