@@ -7,7 +7,7 @@ const isAuth = (WrappedComponent) => {
 
         render() {
             const { isAuthorized } = this.props;
-            console.log('123');
+            console.log('222');
 
             if (!isAuthorized) {
                 return <Redirect to='/login' />;
