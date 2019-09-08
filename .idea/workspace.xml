@@ -1,0 +1,682 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="3fcae081-943f-46e8-bc4a-5472d3a50f19" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/re-store.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/actions/auth.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/actions/books.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/actions/cart.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/actions/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/book-detail/book-detail.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/book-filter/book-filter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/book-list-item/book-list-item.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/book-list/book-list.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/cart/cart.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/header/header.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/ui/input/input.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/containers/book-detail-container/book-detail-container.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/containers/book-list-container/book-list-container.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/containers/cart-container/cart-container.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/containers/cart-total-container/cart-total-container.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/history.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hoc/isAuth.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/localstorage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/cart-page.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/home-page.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/login-page.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/order-detail-page.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/orders-page.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/reducers/auth.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/reducers/book-detail.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/reducers/books.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/reducers/cart.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/reducers/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/routes.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sagas/auth.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sagas/book-detail.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sagas/books.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sagas/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/selectors/books.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/services/bookstore-service.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/filterData.js" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution>
+      <executable />
+    </execution>
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/hoc/isAuth.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="12" column="14" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>watchIncrementAsync</find>
+      <find>getState</find>
+      <find>fetchBook</find>
+      <find>takeLatest</find>
+      <find>id</find>
+      <find>bookLoaded</find>
+      <find>FETCH_BOOK_GET_BY_ID</find>
+      <find>bookRequested</find>
+      <find>mouseover</find>
+      <find>end</find>
+      <find>endless</find>
+      <find>endlessScroll</find>
+      <find>portf</find>
+      <find>port</find>
+      <find>team</find>
+      <find>arrows</find>
+      <find>dropdown_menu</find>
+      <find>dropdown__middle</find>
+      <find>.dropdown__middle</find>
+      <find>191f21</find>
+      <find>LoginReduxForm</find>
+      <find>booksRequested</find>
+      <find>BOOK</find>
+      <find>LOADED</find>
+      <find>error</find>
+      <find>tos</find>
+      <find>authSuccess</find>
+      <find>FETCH_AUTH_MIDDLEWARE</find>
+      <find>authMiddleware</find>
+      <find>updateOrder</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>AUTH</replace>
+      <replace>SUCCESS</replace>
+      <replace>logIn</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$USER_HOME$/AppData/Local/Temp/scp12693/mlservice.kalitin.kz/bitrix/templates/proseo/css/app.css" />
+        <option value="$USER_HOME$/AppData/Local/Temp/scp05718/mlservice.kalitin.kz/index.php" />
+        <option value="$USER_HOME$/AppData/Local/Temp/scp57604/mlservice.kalitin.kz/bitrix/components/dev/constructor/templates/.default/template.php" />
+        <option value="$USER_HOME$/AppData/Local/Temp/scp56134/mlservice.kalitin.kz/bitrix/components/dev/constructor/component.php" />
+        <option value="$USER_HOME$/AppData/Local/Temp/scp57412/mlservice.kalitin.kz/bitrix/components/dev/constructor/templates/.default/ajax/template.php" />
+        <option value="$USER_HOME$/AppData/Local/Temp/scp12694/mlservice.kalitin.kz/bitrix/templates/proseo/js/dev.js" />
+        <option value="$USER_HOME$/AppData/Local/Temp/scp56587/mlservice.kalitin.kz/services/seo/index.php" />
+        <option value="$USER_HOME$/AppData/Local/Temp/scp06538/mlservice.kalitin.kz/services/landing-page/index.php" />
+        <option value="$USER_HOME$/AppData/Local/Temp/scp06404/mlservice.kalitin.kz/services/context/index.php" />
+        <option value="$USER_HOME$/AppData/Local/Temp/scp56042/mlservice.kalitin.kz/services/development/index.php" />
+        <option value="$PROJECT_DIR$/src/index.js" />
+        <option value="$PROJECT_DIR$/src/sagas/book-detail.js" />
+        <option value="$USER_HOME$/AppData/Local/Temp/scp29209/mlservice.kalitin.kz/bitrix/templates/proseo/libs/endless-scroll/endless-scroll.js" />
+        <option value="$USER_HOME$/AppData/Local/Temp/scp37001/mlservice.kalitin.kz/bitrix/templates/proseo/components/bitrix/news.list/clients/template.php" />
+        <option value="$USER_HOME$/AppData/Local/Temp/scp42992/mlservice.kalitin.kz/services/landing-page/index.php" />
+        <option value="$USER_HOME$/AppData/Local/Temp/scp43710/mlservice.kalitin.kz/services/development/index.php" />
+        <option value="$USER_HOME$/AppData/Local/Temp/scp13125/mlservice.kalitin.kz/index.php" />
+        <option value="$USER_HOME$/AppData/Local/Temp/scp47936/mlservice.kalitin.kz/services/seo/index.php" />
+        <option value="$USER_HOME$/AppData/Local/Temp/scp46512/mlservice.kalitin.kz/services/context/index.php" />
+        <option value="$USER_HOME$/AppData/Local/Temp/scp18199/mlservice.kalitin.kz/bitrix/templates/proseo/components/bitrix/news.list/portfolio/template.php" />
+        <option value="$USER_HOME$/AppData/Local/Temp/scp59339/mlservice.kalitin.kz/test.php" />
+        <option value="$USER_HOME$/AppData/Local/Temp/scp04669/mlservice.kalitin.kz/bitrix/templates/proseo/components/bitrix/news.list/team/template.php" />
+        <option value="$USER_HOME$/AppData/Local/Temp/scp02903/mlservice.kalitin.kz/bitrix/templates/proseo/components/bitrix/news.list/team-test/template.php" />
+        <option value="$USER_HOME$/AppData/Local/Temp/scp11075/mlservice.kalitin.kz/include/menu-feedback.php" />
+        <option value="$USER_HOME$/AppData/Local/Temp/scp11919/mlservice.kalitin.kz/include/menu-callback.php" />
+        <option value="$USER_HOME$/AppData/Local/Temp/scp17775/mlservice.kalitin.kz/bitrix/templates/proseo/css/media.css" />
+        <option value="$USER_HOME$/AppData/Local/Temp/scp36420/mlservice.kalitin.kz/bitrix/templates/proseo/css/app.css" />
+        <option value="$USER_HOME$/AppData/Local/Temp/scp32637/mlservice.kalitin.kz/bitrix/templates/proseo/js/app.js" />
+        <option value="$USER_HOME$/AppData/Local/Temp/scp07864/mlservice.kalitin.kz/bitrix/templates/proseo/footer.php" />
+        <option value="$PROJECT_DIR$/src/components/ui/input/input.js" />
+        <option value="$PROJECT_DIR$/src/actions/books.js" />
+        <option value="$PROJECT_DIR$/src/sagas/books.js" />
+        <option value="$PROJECT_DIR$/src/containers/book-list-container/book-list-container.js" />
+        <option value="$PROJECT_DIR$/src/reducers/index.js" />
+        <option value="$PROJECT_DIR$/src/sagas/index.js" />
+        <option value="$PROJECT_DIR$/src/containers/book-detail-container/book-detail-container.js" />
+        <option value="$PROJECT_DIR$/src/reducers/auth.js" />
+        <option value="$PROJECT_DIR$/src/sagas/auth.js" />
+        <option value="$PROJECT_DIR$/src/services/bookstore-service.js" />
+        <option value="$PROJECT_DIR$/src/store.js" />
+        <option value="$PROJECT_DIR$/src/actions/auth.js" />
+        <option value="$PROJECT_DIR$/src/hoc/auth.js" />
+        <option value="$PROJECT_DIR$/src/routes.php" />
+        <option value="$PROJECT_DIR$/src/app.js" />
+        <option value="$PROJECT_DIR$/src/pages/home-page.js" />
+        <option value="$PROJECT_DIR$/src/components/header/header.js" />
+        <option value="$PROJECT_DIR$/src/routes.js" />
+        <option value="$PROJECT_DIR$/src/pages/login-page.js" />
+        <option value="$PROJECT_DIR$/src/actions/cart.js" />
+        <option value="$PROJECT_DIR$/src/reducers/cart.js" />
+        <option value="$PROJECT_DIR$/src/hoc/isAuth.js" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectConfigurationFiles">
+    <option name="files">
+      <list>
+        <option value="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
+        <option value="$PROJECT_DIR$/.idea/re-store.iml" />
+        <option value="$PROJECT_DIR$/.idea/misc.xml" />
+        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
+        <option value="$PROJECT_DIR$/.idea/modules.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1440" />
+    <option name="height" value="788" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="re-store" type="b2602c69:ProjectViewProjectNode" />
+              <item name="re-store" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="re-store" type="b2602c69:ProjectViewProjectNode" />
+              <item name="re-store" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="re-store" type="b2602c69:ProjectViewProjectNode" />
+              <item name="re-store" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="actions" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="re-store" type="b2602c69:ProjectViewProjectNode" />
+              <item name="re-store" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="re-store" type="b2602c69:ProjectViewProjectNode" />
+              <item name="re-store" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="header" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="re-store" type="b2602c69:ProjectViewProjectNode" />
+              <item name="re-store" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="hoc" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="re-store" type="b2602c69:ProjectViewProjectNode" />
+              <item name="re-store" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="re-store" type="b2602c69:ProjectViewProjectNode" />
+              <item name="re-store" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="reducers" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/actions" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Projects\reactjs\re-store\src\actions" />
+      <recent name="C:\Projects\reactjs\re-store\src\reducers" />
+      <recent name="C:\Projects\reactjs\re-store\src\sagas" />
+      <recent name="C:\Projects\reactjs\re-store\src\utils" />
+      <recent name="C:\Projects\reactjs\re-store\src\pages" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Projects\reactjs\re-store\src\sagas" />
+      <recent name="C:\Projects\reactjs\re-store\src\components\hoc" />
+      <recent name="C:\Projects\reactjs\re-store\src\components\context" />
+      <recent name="C:\Projects\reactjs\re-store\src" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3fcae081-943f-46e8-bc4a-5472d3a50f19" name="Default Changelist" comment="" />
+      <created>1566487448024</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1566487448024</updated>
+      <workItem from="1566487456271" duration="8567000" />
+      <workItem from="1566575214869" duration="1203000" />
+      <workItem from="1566999564029" duration="12750000" />
+      <workItem from="1567165099547" duration="27376000" />
+      <workItem from="1567223981842" duration="6688000" />
+      <workItem from="1567342400490" duration="1722000" />
+      <workItem from="1567695930392" duration="5430000" />
+      <workItem from="1567844889987" duration="5752000" />
+      <workItem from="1567850810288" duration="13273000" />
+      <workItem from="1567875757631" duration="6872000" />
+      <workItem from="1567935200312" duration="1871000" />
+    </task>
+    <task id="LOCAL-00001" summary="1">
+      <created>1567945745582</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1567945745582</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="91504000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18496802" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="npm" order="2" side_tool="true" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3290461" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3290461" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3290461" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.3290461" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50053304" side_tool="true" weight="0.3290461" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49946696" weight="0.3290461" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
+    </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26865673" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="npm" order="2" side_tool="true" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3290461" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3290461" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3290461" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.3290461" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50053304" side_tool="true" weight="0.3290461" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49946696" weight="0.3290461" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="1" />
+    <option name="LAST_COMMIT_MESSAGE" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp06538/mlservice.kalitin.kz/services/landing-page/index.php" />
+    <entry file="file://$PROJECT_DIR$/src/components/hoc/withBookstoreService.js" />
+    <entry file="file://$PROJECT_DIR$/src/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp31248/mlservice.kalitin.kz/bitrix/templates/proseo/js/dev.js" />
+    <entry file="file://$PROJECT_DIR$/../../proseo/libs/endless-scroll/endless-scroll.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="18" lean-forward="true" selection-end-line="51" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp12509/mlservice.kalitin.kz/bitrix/templates/proseo/components/bitrix/news.list/portfolio-slider/template.php" />
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp37001/mlservice.kalitin.kz/bitrix/templates/proseo/components/bitrix/news.list/clients/template.php" />
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp29209/mlservice.kalitin.kz/bitrix/templates/proseo/libs/endless-scroll/endless-scroll.js" />
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp42992/mlservice.kalitin.kz/services/landing-page/index.php" />
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp43710/mlservice.kalitin.kz/services/development/index.php" />
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp13125/mlservice.kalitin.kz/index.php" />
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp46512/mlservice.kalitin.kz/services/context/index.php" />
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp47936/mlservice.kalitin.kz/services/seo/index.php" />
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp18199/mlservice.kalitin.kz/bitrix/templates/proseo/components/bitrix/news.list/portfolio/template.php" />
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp04669/mlservice.kalitin.kz/bitrix/templates/proseo/components/bitrix/news.list/team/template.php" />
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp59339/mlservice.kalitin.kz/test.php" />
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp02903/mlservice.kalitin.kz/bitrix/templates/proseo/components/bitrix/news.list/team-test/template.php" />
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp10528/mlservice.kalitin.kz/include/callback.php" />
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp11919/mlservice.kalitin.kz/include/menu-callback.php" />
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp11075/mlservice.kalitin.kz/include/menu-feedback.php" />
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp17775/mlservice.kalitin.kz/bitrix/templates/proseo/css/media.css" />
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp32637/mlservice.kalitin.kz/bitrix/templates/proseo/js/app.js" />
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp36420/mlservice.kalitin.kz/bitrix/templates/proseo/css/app.css" />
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp07864/mlservice.kalitin.kz/bitrix/templates/proseo/footer.php" />
+    <entry file="file://$PROJECT_DIR$/src/utils/filterData.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/re-store-2/src/pages/login-page.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="7" lean-forward="true" selection-start-column="7" selection-end-column="7" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/ui/input/input.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/reducers/book-detail.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="2" lean-forward="true" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="2" />
+          <folding>
+            <element signature="e#0#109#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sagas/book-detail.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="29" selection-start-line="29" selection-end-line="34" selection-end-column="2" />
+          <folding>
+            <element signature="e#0#61#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/actions/books.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="28" column="2" selection-start-line="28" selection-start-column="2" selection-end-line="28" selection-end-column="2" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sagas/books.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+          <folding>
+            <element signature="e#0#57#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/reducers/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="32" lean-forward="true" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sagas/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="1" lean-forward="true" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/containers/book-detail-container/book-detail-container.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/containers/book-list-container/book-list-container.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="39" column="49" selection-start-line="39" selection-start-column="47" selection-end-line="39" selection-end-column="49" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/services/bookstore-service.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="35" column="20" selection-start-line="35" selection-start-column="20" selection-end-line="35" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/reducers/auth.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="40" selection-start-line="22" selection-start-column="40" selection-end-line="22" selection-end-column="40" />
+          <folding>
+            <element signature="e#0#105#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/store.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+          <folding>
+            <element signature="e#0#51#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sagas/auth.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+          <folding>
+            <element signature="e#0#61#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/containers/cart-container/cart-container.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/routes.php" />
+    <entry file="file://$PROJECT_DIR$/src/pages/cart-page.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="16" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/home-page.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="39" lean-forward="true" selection-start-line="5" selection-start-column="39" selection-end-line="5" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/header/header.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="37" lean-forward="true" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/routes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="6" lean-forward="true" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
+          <folding>
+            <element signature="e#0#45#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/login-page.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="43" column="39" lean-forward="true" selection-start-line="43" selection-start-column="39" selection-end-line="43" selection-end-column="39" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="14" lean-forward="true" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/actions/auth.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="21" lean-forward="true" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/actions/cart.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/reducers/cart.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="50" column="50" lean-forward="true" selection-start-line="50" selection-start-column="50" selection-end-line="50" selection-end-column="50" />
+          <folding>
+            <element signature="e#0#114#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/hoc/isAuth.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="14" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
