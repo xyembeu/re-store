@@ -1,6 +1,8 @@
 import BookstoreService from "../services/bookstore-service";
 import {call, put, takeLatest} from 'redux-saga/effects';
 
+const bookstoreService = new BookstoreService();
+
 export const FETCH_BOOK_LOADED = 'FETCH_BOOK_LOADED';
 export const FETCH_BOOK_REQUESTED = 'FETCH_BOOK_REQUESTED';
 export const FETCH_BOOK_ERROR = 'FETCH_BOOK_ERROR';
@@ -38,7 +40,6 @@ export const bookGetById = (id) => {
 function* fetchBook({payload}) {
     try {
         yield put(bookRequested());
-        const bookstoreService = new BookstoreService();
         const data = yield call(bookstoreService.getBookDetail, payload);
         yield put(bookLoaded(data));
     } catch (error) {
