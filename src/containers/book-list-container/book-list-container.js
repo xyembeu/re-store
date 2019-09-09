@@ -19,7 +19,7 @@ class BookListContainer extends Component {
     }
 
     render() {
-        const {products, loading, error, filter, booksFilter, bookAddToCart} = this.props;
+           const {products, loading, error, filter, booksFilter, bookAddToCart} = this.props;
 
         if (loading) {
             return (

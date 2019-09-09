@@ -5,6 +5,7 @@ import { booksReducer } from './books';
 import { bookReducer } from './book-detail';
 import { cartReducer } from './cart';
 import {authReducer} from "./auth";
+import {constructorReducer} from "./constructor";
 
 
 export default combineReducers({
@@ -12,5 +13,6 @@ export default combineReducers({
     book: bookReducer,
     cart: cartReducer,
     auth: authReducer,
-    form:formReducer
+    form:formReducer,
+    steps: constructorReducer
 });
