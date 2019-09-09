@@ -1,4 +1,8 @@
 import {call, put, takeLatest} from 'redux-saga/effects';
+import {customHistory} from '../history';
+import queryString from 'query-string';
+import pickBy from 'lodash.pickby';
+import identity from 'lodash.identity';
 import BookstoreService from "../services/bookstore-service";
 import {booksError, booksLoaded} from "../actions/books";
 
@@ -13,6 +17,18 @@ function* fetchBooks() {
     }
 }
 
+function* filterBooks({payload}) {
+    if (!Object.keys(payload).length) {
+        customHistory.push(`/orders`);
+        return;
+    }
+    const cleanedFilters = pickBy(payload, identity);
+    const queryParams = queryString.stringify(cleanedFilters);
+
+    yield call(customHistory.push, '/orders?' + queryParams);
+}
+
 export function* watchBooks() {
-    yield takeLatest('FETCH_BOOKS_REQUESTED', fetchBooks);
+    yield takeLatest('FETCH_BOOKS', fetchBooks);
+    yield takeLatest('FETCH_BOOKS_FILTER', filterBooks);
 }

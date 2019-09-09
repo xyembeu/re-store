@@ -1,11 +1,8 @@
-import {customHistory} from '../history';
-import queryString from 'query-string';
-import pickBy from 'lodash.pickby';
-import identity from 'lodash.identity';
-
 export const FETCH_BOOKS_LOADED = 'FETCH_BOOKS_LOADED';
 export const FETCH_BOOKS_REQUESTED = 'FETCH_BOOKS_REQUESTED';
 export const FETCH_BOOKS_ERROR = 'FETCH_BOOKS_ERROR';
+export const FETCH_BOOKS_FILTER = 'FETCH_BOOKS_FILTER';
+export const FETCH_BOOKS = 'FETCH_BOOKS';
 
 
 export const booksRequested = () => {
@@ -28,19 +25,16 @@ export const booksError = (error) => {
     }
 };
 
-export const booksFilter = (filter) => {
-    return () => {
-
-        if (!Object.keys(filter).length) {
-            customHistory.push(`/orders`);
-            return;
-        }
-        const cleanedFilters = pickBy(filter, identity);
-        const queryParams = queryString.stringify(cleanedFilters);
-
-        customHistory.push(`/orders?${queryParams}`);
-    };
+export const booksFetch = () => {
+    return {
+        type: FETCH_BOOKS
+    }
 };
 
-
+export const booksFilter = (filter) => {
+    return {
+        type: FETCH_BOOKS_FILTER,
+        payload: filter
+    }
+};
 

@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {connect} from "react-redux";
 import {withRouter} from 'react-router-dom';
-import {booksFilter, booksRequested} from "../../actions/books";
+import {booksFilter, booksFetch} from "../../actions/books";
 
 import {bookAddToCart} from "../../actions/cart";
 
@@ -14,8 +14,8 @@ import {productsReSelector, filterReSelector} from "../../selectors/books";
 class BookListContainer extends Component {
 
     componentDidMount() {
-        const {booksRequested} = this.props;
-        booksRequested();
+        const {booksFetch} = this.props;
+        booksFetch();
     }
 
     render() {
@@ -57,7 +57,7 @@ const mapStateToProps = (state, ownProps) => {
 
 const mapDispatchToProps = (dispatch) => {
     return bindActionCreators({
-        booksRequested,
+        booksFetch,
         bookAddToCart,
         booksFilter
     }, dispatch);
