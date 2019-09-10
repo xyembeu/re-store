@@ -2,6 +2,7 @@ import BookListItem from "../book-list-item/book-list-item";
 import React from "react";
 
 const BookList = ({data, onAddToCart}) =>{
+
     return (
         <table className={'table'}>
             <tbody>

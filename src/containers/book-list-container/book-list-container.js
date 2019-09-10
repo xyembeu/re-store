@@ -1,72 +1,71 @@
-import React, {Component} from 'react';
-import {connect} from "react-redux";
-import {withRouter} from 'react-router-dom';
+import React, {useEffect, useCallback} from 'react';
+import {useDispatch, useSelector} from "react-redux";
+
 import {booksFilter, booksFetch} from "../../actions/books";
 
 import {bookAddToCart} from "../../actions/cart";
+import {customHistory} from '../../history';
 
 import BookList from "../../components/book-list/book-list";
-import {bindActionCreators, compose} from "redux";
 import BookFilter from "../../components/book-filter/book-filter";
-import {productsReSelector, filterReSelector} from "../../selectors/books";
+
+import {filterReSelector, productsReSelector} from "../../selectors/books";
 
 
-class BookListContainer extends Component {
+function BookListContainer() {
+    const {loading, error} = useSelector((state) => state.books);
 
-    componentDidMount() {
-        const {booksFetch} = this.props;
-        booksFetch();
-    }
+    const products = useSelector(state => productsReSelector(state, customHistory) );
+    const filter = useSelector(state => filterReSelector(state, customHistory));
 
-    render() {
-           const {products, loading, error, filter, booksFilter, bookAddToCart} = this.props;
+    const dispatch = useDispatch();
 
-        if (loading) {
-            return (
-                <div>Loading...</div>
-            );
-        }
-
-        if (error) {
-            return (
-                <div>{error}</div>
-            );
-        }
-
-        return (
-            <>
-                <BookFilter setFilter={booksFilter} filter={filter}/>
-                <br/>
-                <BookList data={products} onAddToCart={bookAddToCart}/>
-            </>
-        )
-
-    }
-}
-
-const mapStateToProps = (state, ownProps) => {
-    const {loading, error} = state.books;
-
-    return {
-        products: productsReSelector(state, ownProps),
-        filter: filterReSelector(state, ownProps),
-        loading,
-        error
-    }
-};
-
-const mapDispatchToProps = (dispatch) => {
-    return bindActionCreators({
-        booksFetch,
-        bookAddToCart,
-        booksFilter
-    }, dispatch);
-};
-
-
-const enhance =  compose(
-        withRouter,
-        connect(mapStateToProps, mapDispatchToProps)
+    const fetchGet = useCallback(
+        () => dispatch(booksFetch()),
+        [dispatch]
     );
 
-export default enhance(BookListContainer);
+    const filterGet = useCallback(
+        (filter) => {
+           return dispatch(booksFilter(filter))
+        },
+        [dispatch]
+    );
+
+    const addCart = useCallback(
+        (item) => dispatch(bookAddToCart(item)),
+        [dispatch]
+    );
+
+    useEffect(() => {
+        fetchGet();
+    }, []);
+
+
+    if (loading) {
+        return (
+            <div>Loading...</div>
+        );
+    }
+
+    if (error) {
+        return (
+            <div>{error}</div>
+        );
+    }
+
+    console.log('render')
+
+
+    return (
+        <>
+            <BookFilter setFilter={filterGet} filter={filter}/>
+            <br/>
+            <BookList data={products} onAddToCart={addCart}/>
+        </>
+    )
+
+}
+
+export default BookListContainer;
+

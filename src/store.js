@@ -1,4 +1,4 @@
-import {createStore, applyMiddleware} from "redux";
+import {createStore, applyMiddleware, compose} from "redux";
 import combineReducers from './reducers';
 import {saveState, loadState} from './localstorage';
 import createSagaMiddleware from 'redux-saga';
@@ -8,9 +8,16 @@ const sagaMiddleware = createSagaMiddleware();
 
 const initialState = loadState("state");
 
-const store = createStore(combineReducers, initialState, applyMiddleware(sagaMiddleware));
 
-store.subscribe((initialState) => {
+const createStoreWithMiddleware = compose(
+    applyMiddleware(sagaMiddleware)
+)(createStore);
+
+const store = createStoreWithMiddleware(combineReducers, initialState,
+    window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+);
+
+store.subscribe(() => {
     saveState({
         cart: {
             cartItems: store.getState()['cart']['cartItems']

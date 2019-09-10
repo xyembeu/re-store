@@ -13,9 +13,9 @@ import store from './store';
 
 ReactDOM.render(
     <Provider store={store}>
-            <Router history={customHistory}>
-                <App/>
-            </Router>
+        <Router history={customHistory}>
+            <App/>
+        </Router>
     </Provider>,
     document.getElementById('root')
 );

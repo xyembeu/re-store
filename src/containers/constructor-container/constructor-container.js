@@ -1,49 +1,42 @@
-import React, {Component} from 'react';
-import {connect} from "react-redux";
+import React, {useEffect, useCallback} from 'react';
+import {useSelector, useDispatch} from "react-redux";
 import {constructorFetchGet, constructorFetchSet} from "../../actions/constructor";
 
+function ConstructorContainer() {
+    const {data, loading, error} = useSelector(state => state.steps);
+    const dispatch = useDispatch();
+    const fetchGet = useCallback(
+        () => dispatch(constructorFetchGet()),
+        [dispatch]
+    );
+    const fetchSet = useCallback(
+        (id) => dispatch(constructorFetchSet(id)),
+        [dispatch]
+    );
 
-class ConstructorContainer extends Component {
+    useEffect(() => {
+        fetchGet();
+    }, []);
 
-    componentDidMount() {
-        this.props.constructorFetchGet();
-    };
-
-    render() {
-        const {data, loading, error, constructorFetchSet} = this.props;
-        if (loading) {
-            return <div>Loading...</div>
-        }
-        if (error) {
-            return <div>{error}</div>
-        }
-        return (
-            <ul>
-                {data.map(({id, title, active}) => {
-                    return (
-                        <li key={id} onClick={()=>constructorFetchSet(id)}>
-                            <span style={{fontWeight: active ? 'bold' : ''}}>{title}</span>
-                        </li>
-                    );
-                })}
-            </ul>
-        );
+    if (loading) {
+        return <div>Loading...</div>
     }
+    if (error) {
+        return <div>{error}</div>
+    }
+
+    return (
+        <ul>
+            {data.map(({id, title, active}) => {
+                return (
+                    <li key={id} onClick={() => fetchSet(id)}>
+                        <span style={{fontWeight: active ? 'bold' : ''}}>{title}</span>
+                    </li>
+                );
+            })}
+        </ul>
+    );
+
 }
 
-const mapStateToProps = (state) => {
-    const {data, loading, error} = state.steps;
-
-    return {
-        data,
-        loading,
-        error
-    }
-};
-
-const mapDispatchToProps = {
-    constructorFetchGet,
-    constructorFetchSet
-};
-
-export default connect(mapStateToProps, mapDispatchToProps)(ConstructorContainer);
+export default ConstructorContainer;

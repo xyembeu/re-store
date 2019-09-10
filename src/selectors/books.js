@@ -8,7 +8,7 @@ const productsSelector = (state) => {
 };
 
 const filterSelector = (state, props) => {
-    return props.history.location.search
+    return props.location.search
   };
 
 export const productsReSelector = createSelector(

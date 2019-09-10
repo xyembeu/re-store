@@ -17,7 +17,7 @@ function* fetchBooks() {
     }
 }
 
-function* filterBooks({payload}) {
+function filterBooks({payload}) {
     if (!Object.keys(payload).length) {
         customHistory.push(`/orders`);
         return;
@@ -25,7 +25,7 @@ function* filterBooks({payload}) {
     const cleanedFilters = pickBy(payload, identity);
     const queryParams = queryString.stringify(cleanedFilters);
 
-    yield call(customHistory.push, '/orders?' + queryParams);
+    customHistory.push('/orders?' + queryParams);
 }
 
 export function* watchBooks() {
