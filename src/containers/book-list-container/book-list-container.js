@@ -7,34 +7,20 @@ import {bookAddToCart} from "../../actions/cart";
 
 import BookList from "../../components/book-list/book-list";
 import {bindActionCreators, compose} from "redux";
-import BookFilter from "../../components/book-filter/book-filter";
-import {productsReSelector, filterReSelector} from "../../selectors/books";
-import pickBy from "lodash.pickby";
-import identity from "lodash.identity";
-import queryString from "query-string";
+
+import {productsReSelector} from "../../selectors/books";
 
 
 class BookListContainer extends Component {
 
     componentDidMount() {
         const {booksFetch} = this.props;
-        booksFetch();
+        booksFetch(true);
     }
 
-    booksFilter = (filter) =>{
-
-        if (!Object.keys(filter).length) {
-            this.props.history.push(`/orders`);
-            return;
-        }
-        const cleanedFilters = pickBy(filter, identity);
-        const queryParams = queryString.stringify(cleanedFilters);
-        this.props.history.push('/orders?' + queryParams);
-    };
 
     render() {
-
-        const {products, loading, error, filter,  bookAddToCart} = this.props;
+        const {products, loading, error,  bookAddToCart} = this.props;
 
         if (loading) {
             return (
@@ -48,10 +34,10 @@ class BookListContainer extends Component {
             );
         }
 
+        console.log(products)
+
         return (
             <>
-                <BookFilter setFilter={this.booksFilter} filter={filter}/>
-                <br/>
                 <BookList data={products} onAddToCart={bookAddToCart}/>
             </>
         )
@@ -64,7 +50,6 @@ const mapStateToProps = (state, ownProps) => {
 
     return {
         products: productsReSelector(state, ownProps),
-        filter: filterReSelector(state, ownProps),
         loading,
         error
     }

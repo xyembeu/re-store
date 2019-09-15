@@ -25,9 +25,10 @@ export const booksError = (error) => {
     }
 };
 
-export const booksFetch = () => {
+export const booksFetch = (flag) => {
     return {
-        type: FETCH_BOOKS
+        type: FETCH_BOOKS,
+        payload:flag
     }
 };
 

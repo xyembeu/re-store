@@ -8,8 +8,8 @@ const productsSelector = (state) => {
 };
 
 const filterSelector = (state, props) => {
-    return props.location.search
-  };
+    return props.history.location.search
+};
 
 export const productsReSelector = createSelector(
     [productsSelector, filterSelector],

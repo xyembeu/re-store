@@ -5,10 +5,10 @@ import {booksError, booksLoaded, booksRequested} from "../actions/books";
 
 const bookstoreService = new BookstoreService();
 
-function* fetchBooks() {
+function* fetchBooks({payload}) {
     try {
         yield put(booksRequested());
-        const data = yield call(bookstoreService.getBooks);
+        const data = payload ? yield call(bookstoreService.getBooks) : [];
         yield put(booksLoaded(data));
     } catch (error) {
         yield put(booksError(error));

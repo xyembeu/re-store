@@ -8,7 +8,6 @@ const sagaMiddleware = createSagaMiddleware();
 
 const initialState = loadState("state");
 
-
 const createStoreWithMiddleware = compose(
     applyMiddleware(sagaMiddleware)
 )(createStore);
