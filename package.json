@@ -1,0 +1,47 @@
+{
+  "name": "re-store",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "lodash.identity": "^3.0.0",
+    "lodash.includes": "^4.3.0",
+    "lodash.isempty": "^4.4.0",
+    "lodash.isequal": "^4.5.0",
+    "lodash.pickby": "^4.6.0",
+    "prop-types": "^15.7.2",
+    "query-string": "^6.8.2",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "react-redux": "^7.1.0",
+    "react-router-dom": "^5.0.1",
+    "react-scripts": "3.1.1",
+    "redux": "^4.0.4",
+    "redux-form": "^8.2.6",
+    "redux-saga": "^1.0.5",
+    "redux-thunk": "^2.3.0",
+    "reselect": "^4.0.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 2 chrome version",
+      "last 2 firefox version",
+      "last 2 safari version",
+      "last 2 Edge versions",
+      "ie 11"
+    ]
+  }
+}
