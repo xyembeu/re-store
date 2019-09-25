@@ -16,7 +16,7 @@ class BookListContainer extends Component {
     componentDidMount() {
         const {booksFetch} = this.props;
         booksFetch(true);
-        console.log('888');
+        console.log('999');
     }
 
 
