@@ -35,7 +35,6 @@ class BookListContainer extends Component {
             );
         }
 
-        console.log(products)
 
         return (
             <>
