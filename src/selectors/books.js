@@ -3,25 +3,17 @@ import queryString from 'query-string';
 import {filterData} from "../utils/filterData";
 
 
-const productsSelector = (state) => {
+export const productsSelector = (state) => {
     return state.books.products;
 };
 
-const filterSelector = (state, props) => {
+export const filterSelector = (state, props) => {
     return props.history.location.search
 };
 
 export const productsReSelector = createSelector(
-    [productsSelector, filterSelector],
-    (products, filter) => {
-        return filterData(products, queryString.parse(filter))
+    [productsSelector],
+    (products) => {
+        return products
     }
 );
-
-export const filterReSelector = createSelector(
-    [filterSelector],
-    (filter) => {
-        return queryString.parse(filter)
-    }
-);
-

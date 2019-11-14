@@ -11,15 +11,10 @@ export default class BookstoreService {
     ];
 
     getBooks =() =>  {
-        return new Promise((resolve, reject) => {
-            setTimeout(() => {
-                resolve(this.dataProducts);
-                //reject(new Error('Ошибка'))
-            }, 700);
-        });
 
-          // return fetch('https://jsonplaceholder.typicode.com/posts')
-          //       .then(response => response.json())
+
+          return fetch('https://jsonplaceholder.typicode.com/posts')
+              .then(response => response.json())
     }
 
     getBookDetail = (id) => {

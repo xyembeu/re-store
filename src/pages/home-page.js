@@ -1,17 +1,14 @@
 import React, {Component} from 'react';
-import Constructor from "../containers/constructor-container/constructor-container";
+import HomePage2 from "../home-page2";
 
 class HomePage extends Component {
+
     render() {
         return (
-            <div className="container">
-                <div className="col-md-12">
-                    <h4>WELCOME</h4>
-                    <Constructor/>
-                </div>
-            </div>
+            <HomePage2/>
         );
     }
 }
+
 
 export default HomePage;

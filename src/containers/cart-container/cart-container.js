@@ -31,6 +31,6 @@ const mapDispatchToProps = {
     onDelete: allBooksRemoveFromCart
 };
 
-export default compose(
+export default
     connect(mapStateToProps, mapDispatchToProps)
-)(CartContainer);
+(CartContainer);

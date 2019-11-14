@@ -1,7 +1,7 @@
 import React from 'react';
 
-export const InputField = ({input, meta, ...props}) => {
+export const InputField = ({field, form, ...props}) => {
     return (
-        <input {...input} {...props}/>
+        <input {...field} {...form}/>
     );
 };

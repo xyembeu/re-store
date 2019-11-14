@@ -1,24 +1,24 @@
-import React, {Component} from 'react';
+import React, {PureComponent} from 'react';
 import {Route, Switch, withRouter} from 'react-router-dom';
 import Header from "./components/header/header";
-import {routes} from './routes';
-import RouteContainer from "./containers/RouteContainer/RouteContainer";
+import HomePage from "./pages/home-page";
+import OrdersPage from "./pages/orders-page";
+import CartPage from "./pages/cart-page";
 
 
-class App extends Component {
+class App extends PureComponent {
     render() {
         return (
             <>
                 <Header/>
                 <Switch>
-                    {routes.map(({isPrivate, path, isExact, component}) => (
-                        <RouteContainer key={path} exact={isExact} path={path} component={component}
-                                      isPrivate={isPrivate}/>
-                    ))}
+                    <Route path='/' exact render={props => <HomePage {...props}/>}/>
+                    <Route path='/orders' exact render={props => <OrdersPage {...props}/>}/>
+                    <Route path='/cart' exact  render={props => <CartPage {...props}/>}/>
                 </Switch>
             </>
         );
     }
 }
 
-export default withRouter(App);
+export default App;

@@ -3,18 +3,32 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "date-fns": "^2.5.0",
+    "formik": "^1.5.8",
+    "lodash.debounce": "^4.0.8",
+    "lodash.find": "^4.6.0",
     "lodash.identity": "^3.0.0",
     "lodash.includes": "^4.3.0",
     "lodash.isempty": "^4.4.0",
     "lodash.isequal": "^4.5.0",
+    "lodash.map": "^4.6.0",
     "lodash.pickby": "^4.6.0",
+    "node-sass": "^4.12.0",
     "prop-types": "^15.7.2",
     "query-string": "^6.8.2",
     "react": "^16.9.0",
+    "react-classnames": "^0.1.2",
+    "react-css-modules": "^4.7.11",
+    "react-datepicker": "^2.9.6",
     "react-dom": "^16.9.0",
+    "react-dropdown-tree-select": "^2.1.1",
+    "react-modal": "^3.10.1",
     "react-redux": "^7.1.0",
     "react-router-dom": "^5.0.1",
     "react-scripts": "3.1.1",
+    "react-select": "^3.0.8",
+    "react-transition-group": "^4.3.0",
+    "react-treebeard": "^3.2.4",
     "redux": "^4.0.4",
     "redux-form": "^8.2.6",
     "redux-saga": "^1.0.5",
@@ -43,5 +57,8 @@
       "last 2 Edge versions",
       "ie 11"
     ]
+  },
+  "devDependencies": {
+    "moment": "^2.24.0"
   }
 }

@@ -3,7 +3,7 @@ import {Link} from "react-router-dom";
 
 class BookListItem extends Component {
     render() {
-        const {item: {id, title, author, price}, onAddToCart} = this.props;
+        const {item: {id, title, author, price}, onAddToCart, toggle} = this.props;
         return (
             <tr>
                 <td><Link to={`/orders/${id}`}>{title}</Link></td>
@@ -15,6 +15,9 @@ class BookListItem extends Component {
                     }}>
                         В корзину
                     </button>
+                </td>
+                <td>
+                    <button onClick={() => toggle()}>123</button>
                 </td>
             </tr>
         );

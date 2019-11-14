@@ -11,11 +11,13 @@ export const booksRequested = () => {
     }
 };
 
-export const booksLoaded = (data) => {
+export const booksLoaded = () => {
     return {
-        type: FETCH_BOOKS_LOADED,
-        payload: data
-    }
+        type: FETCH_BOOKS_LOADED, payload: [
+                {id: 1, title: 'Book 1', author: 'Susan J.', price: 1000},
+                {id: 2, title: 'Book 2', author: 'Michael K.', price: 2000}
+            ]}
+
 };
 
 export const booksError = (error) => {
@@ -25,10 +27,4 @@ export const booksError = (error) => {
     }
 };
 
-export const booksFetch = (flag) => {
-    return {
-        type: FETCH_BOOKS,
-        payload:flag
-    }
-};
 

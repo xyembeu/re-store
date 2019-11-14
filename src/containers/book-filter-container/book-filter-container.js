@@ -3,7 +3,7 @@ import {useSelector} from "react-redux";
 
 import BookFilter from "../../components/book-filter/book-filter";
 
-import {filterReSelector} from "../../selectors/books";
+import {filterSelector} from "../../selectors/books";
 import pickBy from "lodash.pickby";
 import identity from "lodash.identity";
 import queryString from "query-string";
@@ -12,7 +12,7 @@ import {withRouter} from "react-router-dom";
 
 function BookFilterContainer(props) {
 
-    const filter = useSelector(state => filterReSelector(state, props));
+    const filter = useSelector(state => filterSelector(state, props));
 
     const filterGet = (filter) => {
         if (!Object.keys(filter).length) {
