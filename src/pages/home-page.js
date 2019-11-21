@@ -15,6 +15,7 @@ export default class HomePage extends Component {
         };
         this.cropImage = this.cropImage.bind(this);
         this.onChange = this.onChange.bind(this);
+        console.log('123')
     }
 
 
